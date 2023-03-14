@@ -17,5 +17,15 @@ namespace PracticeProgram
             else
                 Console.WriteLine("The given number {0} is odd", input);
         }
+        public static void OddNumWithinRange()
+        {
+            Console.WriteLine("Give the input range");
+            int range = Convert.ToInt32(Console.ReadLine());
+            for (int i = 1; i <= range; i++)
+            {
+                if (i % 2 != 0)
+                    Console.WriteLine("The given number {0} is even", i);
+            }
+        }
     }
 }
