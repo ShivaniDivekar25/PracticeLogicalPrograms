@@ -45,6 +45,17 @@ namespace PracticeProgram
             else
                 Console.WriteLine("{0} is larger than {1}", secondNum, firstNum);
         }
-
+        public static void SwapTwoNumbers()
+        {
+            Console.WriteLine("Enter user input");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter user input");
+            int b = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Numbers before swapping {0} and {1}", a, b);
+            a = a + b;
+            b = a - b;
+            a = a - b;
+            Console.WriteLine("Numbers after swapping {0} and {1}", a, b);
+        }
     }
 }
