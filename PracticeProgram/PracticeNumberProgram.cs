@@ -167,5 +167,17 @@ namespace PracticeProgram
                 Console.Write("{0}", sum[count--]);
             }
         }
+        public static void ArithmaticOperation()
+        {
+            Console.WriteLine("Enter first number");
+            int num1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter second number");
+            int num2 = Convert.ToInt32(Console.ReadLine());
+            int addition = num1 + num2;
+            int substraction = num1 - num2;
+            int multiplication = num1 * num2;
+            int division = num1 / num2;
+            Console.WriteLine($"Addition:{addition}, Substraction:{substraction},Multiplication: {multiplication}, Division:{division}");
+        }
     }
 }
