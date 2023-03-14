@@ -57,5 +57,14 @@ namespace PracticeProgram
             a = a - b;
             Console.WriteLine("Numbers after swapping {0} and {1}", a, b);
         }
+        public static void NumberDivisibleBy2()
+        {
+            Console.WriteLine("Enter user input");
+            int input = Convert.ToInt32(Console.ReadLine());
+            if (input % 2 == 0)
+                Console.WriteLine("The number {0} is divisible by 2", input);
+            else
+                Console.WriteLine("The number {0} is not divisible by 2", input);
+        }
     }
 }
