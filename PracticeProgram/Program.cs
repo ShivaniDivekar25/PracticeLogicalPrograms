@@ -6,7 +6,7 @@
         {
             Console.WriteLine("Welcome to Practice Programs");
             Console.WriteLine("Please enter an option");
-            Console.WriteLine("1:Find odd or even number\n2:Odd number within range\n3:Find positive or negative number\n4:Find largest of two numbers\n5:Swap two numbers\n6:Find number divisible by 2\n7:Find sum of all multiple of 3 or 5\n8:Find multiple of seventeen\n9:Sum of digit\n10:Reverse Number\n11:Check num is palindrome or not\n12:Sum Of two binary number\n13:Arithmatic operation\n14:Multiplication of exponant of same base");
+            Console.WriteLine("1:Find odd or even number\n2:Odd number within range\n3:Find positive or negative number\n4:Find largest of two numbers\n5:Swap two numbers\n6:Find number divisible by 2\n7:Find sum of all multiple of 3 or 5\n8:Find multiple of seventeen\n9:Sum of digit\n10:Reverse Number\n11:Check num is palindrome or not\n12:Sum Of two binary number\n13:Arithmatic operation\n14:Multiplication of exponant of same base\n15:Division of exponant of same base\n16:Multiplication table");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -51,6 +51,12 @@
                     break;
                 case 14:
                     PracticeNumberProgram.MulOfExponantOfSameBase();
+                    break;
+                case 15:
+                    PracticeNumberProgram.DivOfExponantOfSameBase();
+                    break;
+                case 16:
+                    PracticeNumberProgram.MultiplicationTable();
                     break;
                 default:
                     Console.WriteLine("Please enter right option");

@@ -190,5 +190,32 @@ namespace PracticeProgram
             double mul = exp1 + exp2;
             Console.WriteLine("Result is: {0}^{1}:{2}",num,mul,Math.Pow(num,mul));
         }
+        public static void DivOfExponantOfSameBase()
+        {
+            Console.WriteLine("Enter the base value");
+            double num = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Enter first user input");
+            double exp1 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Enter second user input");
+            double exp2 = Convert.ToDouble(Console.ReadLine());
+            double div = exp1 - exp2;
+            Console.WriteLine("Result is: {0}^{1}:{2}", num, div, Math.Pow(num, div));
+        }
+        public static void MultiplicationTable()
+        {
+            Console.WriteLine("Enter user input");
+            int input = Convert.ToInt32(Console.ReadLine());
+            if( input < 0)
+            {
+                Console.WriteLine("Entered number is invalid");
+            }
+            else if(input > 0)
+            {
+                for(int i=1; i<=10; i++)
+                {
+                    Console.WriteLine($"{input} * {i} = {input * i}");
+                }
+            }
+        }
     }
 }
