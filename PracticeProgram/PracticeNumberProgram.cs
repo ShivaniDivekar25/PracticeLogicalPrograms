@@ -108,5 +108,21 @@ namespace PracticeProgram
             }
             Console.WriteLine("Sum of digits of number: " + sum);
         }
+        public static void ReverseNumber()
+        {
+            Console.WriteLine("Enter user input");
+            int input = Convert.ToInt32(Console.ReadLine());
+            int rem, rev = 0;
+            while (input != 0)
+            {
+                rem = input % 10;
+                rev = rem + rev * 10;
+                input = input / 10;
+                //rev = rev * 10;
+                //rev = rev + input % 10;
+                //input = input / 10;
+            }
+            Console.WriteLine("The reverse number is: {0}", rev);
+        }
     }
 }
