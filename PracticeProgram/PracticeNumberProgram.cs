@@ -179,5 +179,16 @@ namespace PracticeProgram
             int division = num1 / num2;
             Console.WriteLine($"Addition:{addition}, Substraction:{substraction},Multiplication: {multiplication}, Division:{division}");
         }
+        public static void MulOfExponantOfSameBase()
+        {
+            Console.WriteLine("Enter the base value");
+            double num = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Enter first user input");
+            double exp1 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Enter second user input");
+            double exp2 = Convert.ToDouble(Console.ReadLine());
+            double mul = exp1 + exp2;
+            Console.WriteLine("Result is: {0}^{1}:{2}",num,mul,Math.Pow(num,mul));
+        }
     }
 }
