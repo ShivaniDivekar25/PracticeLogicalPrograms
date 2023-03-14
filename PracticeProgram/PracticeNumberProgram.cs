@@ -66,5 +66,21 @@ namespace PracticeProgram
             else
                 Console.WriteLine("The number {0} is not divisible by 2", input);
         }
+        public static void SumOfAllMultipleThreeAndFive()
+        {
+            int sum = 0;
+            int a, b;
+            for (int i = 1; i < 50; i++)
+            {
+                a = i % 3;
+                b = i % 5;
+                if (a == 0 || b == 0)
+                {
+                    Console.WriteLine("{0} ", i);
+                    sum = sum + i;
+                }
+            }
+            Console.WriteLine("The sum of all multiple of 3 or 5 are: " + sum);
+        }
     }
 }
