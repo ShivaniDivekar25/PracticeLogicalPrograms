@@ -94,5 +94,19 @@ namespace PracticeProgram
                 }
             }
         }
+        public static void SumOfDigit()
+        {
+            Console.WriteLine("Enter user input");
+            int input = Convert.ToInt32(Console.ReadLine());
+            int sum = 0;
+            int rem;
+            while (input != 0)
+            {
+                rem = input % 10;
+                input = input / 10;
+                sum = sum + rem;
+            }
+            Console.WriteLine("Sum of digits of number: " + sum);
+        }
     }
 }
