@@ -124,5 +124,22 @@ namespace PracticeProgram
             }
             Console.WriteLine("The reverse number is: {0}", rev);
         }
+        public static void FindNumberPalindromeOrNot()
+        {
+            Console.WriteLine("Enter user input");
+            int input = Convert.ToInt32(Console.ReadLine());
+            int temp,rem, rev = 0;
+            temp = input;
+            while (input > 0)
+            {
+                rem = input % 10;
+                rev = rem + rev * 10;
+                input = input / 10;
+            }
+            if(temp == rev)
+                Console.WriteLine("The given number is palindrome");
+            else
+                Console.WriteLine("The given number is not palindrome");
+        }
     }
 }
