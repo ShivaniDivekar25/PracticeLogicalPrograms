@@ -27,5 +27,16 @@ namespace PracticeProgram
                     Console.WriteLine("The given number {0} is even", i);
             }
         }
+        public static void FindPosiNegNumber()
+        {
+            Console.WriteLine("Enter user input");
+            int input = Convert.ToInt32(Console.ReadLine());
+            if (input > 0)
+                Console.WriteLine("The number {0} is positive",input);
+            else if (input < 0)
+                Console.WriteLine("The number {0} is negative",input);
+            else
+                Console.WriteLine("The number {0} is zero",input);
+        }
     }
 }
