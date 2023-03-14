@@ -38,5 +38,13 @@ namespace PracticeProgram
             else
                 Console.WriteLine("The number {0} is zero",input);
         }
+        public static void LargestOfTwoNumber(int firstNum, int secondNum)
+        {
+            if (firstNum > secondNum)
+                Console.WriteLine("{0} is larger than {1}", firstNum, secondNum);
+            else
+                Console.WriteLine("{0} is larger than {1}", secondNum, firstNum);
+        }
+
     }
 }
