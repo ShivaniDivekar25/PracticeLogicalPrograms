@@ -82,5 +82,17 @@ namespace PracticeProgram
             }
             Console.WriteLine("The sum of all multiple of 3 or 5 are: " + sum);
         }
+        public static void MultipleOfSeventeen()
+        {
+            int input;
+            for (int i = 1; i < 100; i++)
+            {
+                input = i % 17;
+                if (input == 0)
+                {
+                    Console.WriteLine("{0} is multiple of 17", i);
+                }
+            }
+        }
     }
 }

@@ -6,7 +6,7 @@
         {
             Console.WriteLine("Welcome to Practice Programs");
             Console.WriteLine("Please enter an option");
-            Console.WriteLine("1:Find odd or even number\n2:Odd number within range\n3:Find positive or negative number\n4:Find largest of two numbers\n5:Swap two numbers\n6:Find number divisible by 2\n7:Find sum of all multiple of 3 or 5");
+            Console.WriteLine("1:Find odd or even number\n2:Odd number within range\n3:Find positive or negative number\n4:Find largest of two numbers\n5:Swap two numbers\n6:Find number divisible by 2\n7:Find sum of all multiple of 3 or 5\n8:Find multiple of seventeen");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -30,6 +30,9 @@
                     break;
                 case 7:
                     PracticeNumberProgram.SumOfAllMultipleThreeAndFive();
+                    break;
+                case 8:
+                    PracticeNumberProgram.MultipleOfSeventeen();
                     break;
                 default:
                     Console.WriteLine("Please enter right option");
