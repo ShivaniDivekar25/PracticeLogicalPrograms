@@ -141,5 +141,31 @@ namespace PracticeProgram
             else
                 Console.WriteLine("The given number is not palindrome");
         }
+        public static void SumOfTwoBinaryNum()
+        {
+            int count = 0, rem = 0;
+            int[] sum = new int[20];
+            Console.WriteLine("Enter first binary number:");
+            int b1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enetr second binary number:");
+            int b2 = Convert.ToInt32(Console.ReadLine());
+            while(b1 != 0 || b2 != 0)
+            {
+                sum[count++] = (b1 % 10 + b2 % 10 + rem) % 2;
+                rem = (b1 % 10 + b2 % 10 + rem) / 2;
+                b1 = b1 / 10;
+                b2 = b2 / 10;
+            }
+            if(rem != 0)
+            {
+                sum[count++] = rem;
+                --count;
+                Console.WriteLine("Sum of two binary numbers: ");
+            }
+            while (count >= 0)
+            {
+                Console.Write("{0}", sum[count--]);
+            }
+        }
     }
 }
